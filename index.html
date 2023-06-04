@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="icon" type="image/png" href="logo.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GestureFlow</title>
@@ -9,13 +10,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 </head>
 <body>
-    <header>
-        <div class="container1">
-            <div class="header-left">
-                <h1><img src="logo.png">GestureFlow</h1>
-            </div>
-            <nav class="header-right">
-                <ul>
+    <main>
+        <header class="header-area">
+            <!-- site-navbar start -->
+            <div class="navbar-area">
+              <div class="container">
+                <nav class="site-navbar">
+                  <!-- site logo -->
+                  <a href="#home" class="site-logo">GestureFlow</a>
+          
+                  <!-- site menu/nav -->
+                  <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#download">Download</a></li>
@@ -23,11 +28,17 @@
                     <li><a href="#hand-signs">Hand Signs</a></li>
                     <li><a href="#faq">FAQ</a></li>
                     <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <main>
+                  </ul>
+          
+                  <!-- nav-toggler for mobile version only -->
+                  <button class="nav-toggler">
+                    <span></span>
+                  </button>
+                </nav>
+              </div>
+            </div><!-- navbar-area end -->
+          </header>
+        
         <section id="home" class="section">
             <div class="container">
                 <h2>Welcome to GestureFlow</h2>
@@ -122,6 +133,8 @@
                 </ul>
             </div>
         </section>
+        <button id = "go-to-top"onclick = "window.location.href='#home'"><span>Top </span><span id="arrow">&uarr;</span></button> 
+    
     </main>
     
     <footer>
